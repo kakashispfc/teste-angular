@@ -8,10 +8,9 @@ import { Component, Input } from '@angular/core';
 export class AppComponent {
   title = 'Gastos';
   lista = [];
-  variavel;
+  @Input() variavel;
 
   showAlert() {
-    alert(this.variavel);
     console.log(this.variavel);
   }
 }
